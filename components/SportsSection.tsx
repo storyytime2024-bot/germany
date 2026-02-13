@@ -1,0 +1,44 @@
+
+import React from 'react';
+
+const sports = [
+  { name: 'Fotboll', sub: 'Champions League, Allsvenskan', img: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Ishockey', sub: 'SHL, NHL, VM', img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Formel 1', sub: 'Alla lopp Live', img: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Kampsport', sub: 'UFC, Boxning Live', img: 'https://images.unsplash.com/photo-1517438322307-e67111335449?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Tennis', sub: 'Grand Slam, ATP', img: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Basket', sub: 'NBA, EuroLeague', img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=530&fit=crop&crop=center' }
+];
+
+const SportsSection: React.FC = () => {
+  return (
+    <div className="container mx-auto px-6">
+      <span className="text-blue-200 text-xs font-bold tracking-widest uppercase mb-4 block text-center">VAN FRÅN EREDIVISIE TILL FORMEL 1</span>
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center">Alla Sporter Live i 4K</h2>
+      
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        {sports.map((sport, idx) => (
+          <div key={idx} className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform shadow-xl shadow-black/30">
+            <img src={sport.img} alt={sport.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40"></div>
+            {/* LIVE badge */}
+            <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-red-600 px-2.5 py-1 rounded-lg shadow-lg shadow-red-600/40">
+              <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></div>
+              <span className="text-[9px] font-black text-white tracking-widest uppercase">LIVE</span>
+            </div>
+            {/* HD badge */}
+            <div className="absolute top-3 right-3 bg-white/15 backdrop-blur-sm px-2 py-1 rounded-md">
+              <span className="text-[8px] font-black text-white tracking-wider">4K HD</span>
+            </div>
+            <div className="absolute bottom-0 left-0 p-4 w-full">
+              <h4 className="font-black text-lg leading-tight">{sport.name}</h4>
+              <p className="text-[10px] text-gray-300 font-semibold mt-1 tracking-wide">{sport.sub}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default SportsSection;
