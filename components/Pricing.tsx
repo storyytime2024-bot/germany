@@ -101,14 +101,15 @@ const Pricing: React.FC = () => {
             <div key={plan.id} className={`relative ${plan.featured ? 'pt-6' : 'pt-4'}`}>
               {/* Savings Tag */}
               {plan.savings && (
-                <div className={`absolute top-0 left-1/2 -translate-x-1/2 z-20 ${isVip ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-black shadow-amber-500/30' : 'bg-emerald-500 text-white shadow-emerald-500/30'} px-4 py-1.5 rounded-full text-[10px] font-black uppercase shadow-xl whitespace-nowrap`}>
+                <div className={`absolute top-0 left-1/2 -translate-x-1/2 z-20 ${isVip ? 'bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-500 text-black shadow-amber-500/40' : 'bg-emerald-500 text-white shadow-emerald-500/30'} px-4 py-1.5 rounded-full text-[10px] font-black uppercase shadow-xl whitespace-nowrap flex items-center gap-1.5`}>
+                  {isVip && <span>👑</span>}
                   {plan.savings}
                 </div>
               )}
 
               {/* The Main Card */}
               <div
-                className={`bg-white text-slate-900 p-6 sm:p-7 lg:p-8 rounded-[24px] sm:rounded-[28px] relative transition-all duration-500 group flex flex-col shadow-2xl h-full overflow-hidden ${plan.featured ? `z-10 ring-2 ${isVip ? 'ring-amber-500/40 lg:ring-amber-400/50' : 'ring-red-500/40'} lg:scale-105 lg:ring-4 lg:ring-offset-4 lg:ring-offset-[#020617]` : 'hover:-translate-y-2'}`}
+                className={`p-6 sm:p-7 lg:p-8 rounded-[24px] sm:rounded-[28px] relative transition-all duration-500 group flex flex-col shadow-2xl h-full overflow-hidden ${isVip ? (plan.featured ? 'bg-gradient-to-b from-[#1a1207] via-[#0f0d08] to-[#080604] text-white z-10 ring-2 ring-amber-500/60 lg:scale-105 lg:ring-4 lg:ring-offset-4 lg:ring-offset-[#020617]' : 'bg-gradient-to-b from-[#141210] via-[#0c0a07] to-[#080604] text-white hover:-translate-y-2 ring-1 ring-amber-900/30') : (plan.featured ? 'bg-white text-slate-900 z-10 ring-2 ring-red-500/40 lg:scale-105 lg:ring-4 lg:ring-offset-4 lg:ring-offset-[#020617]' : 'bg-white text-slate-900 hover:-translate-y-2')}`}
               >
                 {/* Corner Ribbon for Featured Pack */}
                 {plan.featured && (
@@ -120,14 +121,14 @@ const Pricing: React.FC = () => {
                 )}
 
                 <div className="mb-6 sm:mb-8">
-                  <span className={`text-[10px] font-black uppercase tracking-[0.2em] block mb-2 ${isVip ? (plan.featured ? 'text-amber-500' : 'text-amber-400/70') : (plan.featured ? 'text-red-600' : 'text-slate-400')}`}>{plan.label}</span>
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-slate-900 tracking-tight">{plan.duration}</h3>
+                  <span className={`text-[10px] font-black uppercase tracking-[0.2em] block mb-2 ${isVip ? (plan.featured ? 'text-amber-400' : 'text-amber-500/60') : (plan.featured ? 'text-red-600' : 'text-slate-400')}`}>{plan.label}</span>
+                  <h3 className={`text-2xl sm:text-3xl font-black uppercase tracking-tight ${isVip ? 'text-white' : 'text-slate-900'}`}>{plan.duration}</h3>
                 </div>
 
                 <div className="mb-6 sm:mb-8 relative">
                   {plan.originalPrice && (
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-slate-400 line-through text-base sm:text-lg font-bold">
+                      <span className={`line-through text-base sm:text-lg font-bold ${isVip ? 'text-amber-500/30' : 'text-slate-400'}`}>
                         {plan.originalPrice.toFixed(2)} €
                       </span>
                     </div>
@@ -137,11 +138,11 @@ const Pricing: React.FC = () => {
                     return (
                       <>
                         <div className="flex items-baseline gap-2">
-                          <span className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tighter text-slate-900 leading-none">{fmt.whole}</span>
-                          <span className="text-xl sm:text-2xl font-black text-slate-400">{fmt.decimals}</span>
-                          <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-red-600 uppercase">{fmt.symbol}</span>
+                          <span className={`text-5xl sm:text-6xl lg:text-7xl font-black tracking-tighter leading-none ${isVip ? 'text-white' : 'text-slate-900'}`}>{fmt.whole}</span>
+                          <span className={`text-xl sm:text-2xl font-black ${isVip ? 'text-amber-500/50' : 'text-slate-400'}`}>{fmt.decimals}</span>
+                          <span className={`text-3xl sm:text-4xl lg:text-5xl font-black uppercase ${isVip ? 'text-amber-400' : 'text-red-600'}`}>{fmt.symbol}</span>
                         </div>
-                        <p className="text-slate-400 text-[10px] mt-2 sm:mt-3 font-medium italic uppercase tracking-wider">{fmt.subtext}</p>
+                        <p className={`text-[10px] mt-2 sm:mt-3 font-medium italic uppercase tracking-wider ${isVip ? 'text-amber-500/40' : 'text-slate-400'}`}>{fmt.subtext}</p>
                       </>
                     );
                   })()}
@@ -153,6 +154,7 @@ const Pricing: React.FC = () => {
                     '65.000+ Sender (Live)',
                     '175.000+ Filme & Serien',
                     'Alle Sportpakete inklusive',
+                    'PPV Events: UFC, Boxen, WWE',
                     '4K / Ultra HD verfügbar',
                     'Dedizierter VIP-Server',
                     'Prioritäts-Support 24/7',
@@ -165,9 +167,9 @@ const Pricing: React.FC = () => {
                     'Anti-Freeze Technologie',
                     'Keine Vertragsbindung',
                   ]).map((feature, i) => (
-                    <div key={i} className="flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate-700 font-semibold leading-snug">
-                      <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${isVip ? 'bg-amber-50' : 'bg-red-50'} flex items-center justify-center shrink-0 mt-0.5`}>
-                        <svg className={`w-2.5 h-2.5 sm:w-3 sm:h-3 ${isVip ? 'text-amber-500' : 'text-red-600'}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" /></svg>
+                    <div key={i} className={`flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm font-semibold leading-snug ${isVip ? 'text-gray-300' : 'text-slate-700'}`}>
+                      <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full ${isVip ? 'bg-amber-500/10' : 'bg-red-50'} flex items-center justify-center shrink-0 mt-0.5`}>
+                        <svg className={`w-2.5 h-2.5 sm:w-3 sm:h-3 ${isVip ? 'text-amber-400' : 'text-red-600'}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" /></svg>
                       </div>
                       {feature}
                     </div>
@@ -178,7 +180,7 @@ const Pricing: React.FC = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block w-full py-4 sm:py-5 rounded-2xl font-black text-sm sm:text-base text-center transition-all duration-300 transform active:scale-95 ${plan.featured ? (isVip ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-black hover:from-amber-600 hover:to-yellow-500 shadow-xl shadow-amber-500/20' : 'bg-red-600 text-white hover:bg-red-700 shadow-xl shadow-red-600/20') : 'bg-slate-900 text-white hover:bg-black shadow-lg shadow-black/10'}`}
+                  className={`block w-full py-4 sm:py-5 rounded-2xl font-black text-sm sm:text-base text-center transition-all duration-300 transform active:scale-95 ${isVip ? (plan.featured ? 'bg-gradient-to-r from-amber-500 to-yellow-400 text-black hover:from-amber-600 hover:to-yellow-500 shadow-xl shadow-amber-500/30' : 'bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 border border-amber-500/20') : (plan.featured ? 'bg-red-600 text-white hover:bg-red-700 shadow-xl shadow-red-600/20' : 'bg-slate-900 text-white hover:bg-black shadow-lg shadow-black/10')}`}
                 >
                   Jetzt starten
                 </a>

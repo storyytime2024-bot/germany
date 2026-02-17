@@ -2,12 +2,12 @@
 import React from 'react';
 
 const sports = [
-  { name: 'Fußball', sub: 'Bundesliga, Champions League, DFB-Pokal', img: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Eishockey', sub: 'DEL, NHL, WM', img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Formel 1', sub: 'Alle Rennen Live', img: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Kampfsport', sub: 'UFC, Boxen Live', img: 'https://images.unsplash.com/photo-1517438322307-e67111335449?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Tennis', sub: 'Grand Slam, ATP', img: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Basketball', sub: 'NBA, EuroLeague, BBL', img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=530&fit=crop&crop=center' }
+  { name: 'Fußball', sub: 'Bundesliga, Champions League, DFB-Pokal', img: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Eishockey', sub: 'DEL, NHL, WM', img: 'https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Formel 1', sub: 'Alle Rennen Live', img: 'https://images.unsplash.com/photo-1742744652734-d5ec6598b5da?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Kampfsport', sub: 'UFC, Boxen Live', img: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Tennis', sub: 'Grand Slam, ATP', img: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Basketball', sub: 'NBA, EuroLeague, BBL', img: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=400&h=530&fit=crop&crop=center' }
 ];
 
 const SportsSection: React.FC = () => {
