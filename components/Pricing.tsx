@@ -94,7 +94,7 @@ const Pricing: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-5 max-w-5xl mx-auto">
         {activePricing[devices].map((plan) => {
-          const message = encodeURIComponent(`Hallo, ich möchte ${isVip ? 'VIP ' : ''}${plan.duration} für ${devices} Gerät${devices > 1 ? 'e' : ''} kaufen.`);
+          const message = encodeURIComponent(`Hallo, ich möchte ${isVip ? 'VIP ' : ''}${plan.duration} für ${devices} Gerät${devices > 1 ? 'e' : ''} kaufen. (${plan.price.toFixed(2)}€)`);
           const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
           return (
