@@ -14,29 +14,29 @@ const ppvChannels: Channel[] = [
   { name: 'DAZN', category: 'PPV', color: '#0C0C0C', logo: 'https://www.google.com/s2/favicons?domain=dazn.com&sz=128' },
   { name: 'Box Nation', category: 'PPV', color: '#E8272C', logo: 'https://www.google.com/s2/favicons?domain=boxnation.com&sz=128' },
   { name: 'Showtime', category: 'PPV', color: '#B71C1C', logo: 'https://www.google.com/s2/favicons?domain=sho.com&sz=128' },
-  { name: 'Sky Sports', category: 'PPV', color: '#0D47A1', logo: 'https://www.google.com/s2/favicons?domain=skysports.com&sz=128' },
+  { name: 'Sky Sport', category: 'PPV', color: '#0D47A1', logo: 'https://www.google.com/s2/favicons?domain=skysports.com&sz=128' },
 ];
 
 const vipChannels: Channel[] = [
-  { name: 'Viaplay', category: 'VIP', color: '#6B21A8', logo: 'https://www.google.com/s2/favicons?domain=viaplay.com&sz=128' },
-  { name: 'C More', category: 'VIP', color: '#00A3E0', logo: 'https://www.google.com/s2/favicons?domain=cmore.se&sz=128' },
-  { name: 'Canal+', category: 'VIP', color: '#1A1A1A', logo: 'https://www.google.com/s2/favicons?domain=canalplus.com&sz=128' },
-  { name: 'HBO Max', category: 'VIP', color: '#5822B4', logo: 'https://www.google.com/s2/favicons?domain=hbo.com&sz=128' },
+  { name: 'Sky Deutschland', category: 'VIP', color: '#003580', logo: 'https://www.google.com/s2/favicons?domain=sky.de&sz=128' },
+  { name: 'DAZN DE', category: 'VIP', color: '#0C0C0C', logo: 'https://www.google.com/s2/favicons?domain=dazn.com&sz=128' },
+  { name: 'RTL+', category: 'VIP', color: '#E4002B', logo: 'https://www.google.com/s2/favicons?domain=rtlplus.com&sz=128' },
+  { name: 'Joyn', category: 'VIP', color: '#1E1E1E', logo: 'https://www.google.com/s2/favicons?domain=joyn.de&sz=128' },
   { name: 'Netflix', category: 'VIP', color: '#E50914', logo: 'https://www.google.com/s2/favicons?domain=netflix.com&sz=128' },
   { name: 'Disney+', category: 'VIP', color: '#113CCF', logo: 'https://www.google.com/s2/favicons?domain=disneyplus.com&sz=128' },
 ];
 
-const nordicChannels: Channel[] = [
-  { name: 'SVT 1', category: 'SE', color: '#1B5E20', logo: 'https://www.google.com/s2/favicons?domain=svt.se&sz=128' },
-  { name: 'TV4', category: 'SE', color: '#C62828', logo: 'https://www.google.com/s2/favicons?domain=tv4.se&sz=128' },
-  { name: 'TV3 Sverige', category: 'SE', color: '#0D47A1', logo: 'https://www.google.com/s2/favicons?domain=viafree.se&sz=128' },
-  { name: 'Kanal 5', category: 'SE', color: '#4A148C', logo: 'https://www.google.com/s2/favicons?domain=discoveryplus.com&sz=128' },
-  { name: 'SVT 2', category: 'SE', color: '#2E7D32', logo: 'https://www.google.com/s2/favicons?domain=svtplay.se&sz=128' },
-  { name: 'Eurosport', category: 'SE', color: '#003A7D', logo: 'https://www.google.com/s2/favicons?domain=eurosport.com&sz=128' },
-  { name: 'NRK 1', category: 'NO', color: '#1565C0', logo: 'https://www.google.com/s2/favicons?domain=nrk.no&sz=128' },
-  { name: 'DR1', category: 'DK', color: '#B71C1C', logo: 'https://www.google.com/s2/favicons?domain=dr.dk&sz=128' },
-  { name: 'YLE TV1', category: 'FI', color: '#00695C', logo: 'https://www.google.com/s2/favicons?domain=yle.fi&sz=128' },
-  { name: 'Discovery+', category: 'SE', color: '#0277BD', logo: 'https://www.google.com/s2/favicons?domain=discoveryplus.com&sz=128' },
+const germanChannels: Channel[] = [
+  { name: 'ARD / Das Erste', category: 'DE', color: '#003B80', logo: 'https://www.google.com/s2/favicons?domain=ard.de&sz=128' },
+  { name: 'ZDF', category: 'DE', color: '#FA7D19', logo: 'https://www.google.com/s2/favicons?domain=zdf.de&sz=128' },
+  { name: 'RTL', category: 'DE', color: '#E4002B', logo: 'https://www.google.com/s2/favicons?domain=rtl.de&sz=128' },
+  { name: 'ProSieben', category: 'DE', color: '#E6000F', logo: 'https://www.google.com/s2/favicons?domain=prosieben.de&sz=128' },
+  { name: 'Sat.1', category: 'DE', color: '#009EE3', logo: 'https://www.google.com/s2/favicons?domain=sat1.de&sz=128' },
+  { name: 'VOX', category: 'DE', color: '#BE1622', logo: 'https://www.google.com/s2/favicons?domain=vox.de&sz=128' },
+  { name: 'Kabel 1', category: 'DE', color: '#E30613', logo: 'https://www.google.com/s2/favicons?domain=kabeleins.de&sz=128' },
+  { name: 'RTL II', category: 'DE', color: '#00A3E0', logo: 'https://www.google.com/s2/favicons?domain=rtl2.de&sz=128' },
+  { name: 'DAZN', category: 'DE', color: '#0C0C0C', logo: 'https://www.google.com/s2/favicons?domain=dazn.com&sz=128' },
+  { name: 'Sport1', category: 'DE', color: '#FFD600', logo: 'https://www.google.com/s2/favicons?domain=sport1.de&sz=128' },
 ];
 
 const ChannelCard: React.FC<{ channel: Channel }> = ({ channel }) => (
@@ -95,11 +95,11 @@ const PremiumChannels: React.FC = () => {
   return (
     <div>
       <div className="container mx-auto px-6 text-center mb-12">
-        <span className="px-5 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-[10px] font-black tracking-[0.2em] uppercase mb-6 inline-block">EXKLUSIVT INNEHÅLL</span>
+        <span className="px-5 py-2 rounded-full border border-red-500/30 bg-red-500/10 text-red-400 text-[10px] font-black tracking-[0.2em] uppercase mb-6 inline-block">EXKLUSIVER INHALT</span>
         <h2 className="text-4xl md:text-6xl font-black mb-4 leading-tight text-white">
-          Premium & VIP <span className="gradient-text italic">Kanaler</span>
+          Premium & VIP <span className="gradient-text italic">Sender</span>
         </h2>
-        <p className="text-slate-400 text-lg max-w-2xl mx-auto">PPV-evenemang, VIP-kanaler och Sveriges mest populära kanaler — allt ingår.</p>
+        <p className="text-slate-400 text-lg max-w-2xl mx-auto">PPV-Events, VIP-Sender und Deutschlands beliebteste Sender — alles inklusive.</p>
       </div>
 
       <div className="space-y-4">
@@ -109,18 +109,18 @@ const PremiumChannels: React.FC = () => {
         <ScrollRow channels={ppvChannels} speed="30s" />
 
         <div className="container mx-auto px-6 mb-2 mt-8">
-          <span className="text-[10px] font-black tracking-[0.2em] uppercase text-purple-400">VIP KANALER</span>
+          <span className="text-[10px] font-black tracking-[0.2em] uppercase text-amber-400">VIP SENDER</span>
         </div>
         <ScrollRow channels={vipChannels} speed="35s" reverse />
 
         <div className="container mx-auto px-6 mb-2 mt-8">
-          <span className="text-[10px] font-black tracking-[0.2em] uppercase text-indigo-400">MEST POPULÄRA I NORDEN</span>
+          <span className="text-[10px] font-black tracking-[0.2em] uppercase text-red-400">BELIEBTESTE IN DEUTSCHLAND</span>
         </div>
-        <ScrollRow channels={nordicChannels} speed="40s" />
+        <ScrollRow channels={germanChannels} speed="40s" />
       </div>
 
       <div className="text-center mt-10">
-        <p className="text-slate-500 text-sm font-medium">+ tusentals fler kanaler från hela världen ingår i alla paket</p>
+        <p className="text-slate-500 text-sm font-medium">+ tausende weitere Sender aus der ganzen Welt in allen Paketen enthalten</p>
       </div>
 
       <style>{`

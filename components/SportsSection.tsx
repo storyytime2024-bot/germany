@@ -2,20 +2,20 @@
 import React from 'react';
 
 const sports = [
-  { name: 'Fotboll', sub: 'Champions League, Allsvenskan', img: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Ishockey', sub: 'SHL, NHL, VM', img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Formel 1', sub: 'Alla lopp Live', img: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Kampsport', sub: 'UFC, Boxning Live', img: 'https://images.unsplash.com/photo-1517438322307-e67111335449?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Fußball', sub: 'Bundesliga, Champions League, DFB-Pokal', img: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Eishockey', sub: 'DEL, NHL, WM', img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Formel 1', sub: 'Alle Rennen Live', img: 'https://images.unsplash.com/photo-1504707748692-419802cf939d?w=400&h=530&fit=crop&crop=center' },
+  { name: 'Kampfsport', sub: 'UFC, Boxen Live', img: 'https://images.unsplash.com/photo-1517438322307-e67111335449?w=400&h=530&fit=crop&crop=center' },
   { name: 'Tennis', sub: 'Grand Slam, ATP', img: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=400&h=530&fit=crop&crop=center' },
-  { name: 'Basket', sub: 'NBA, EuroLeague', img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=530&fit=crop&crop=center' }
+  { name: 'Basketball', sub: 'NBA, EuroLeague, BBL', img: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=530&fit=crop&crop=center' }
 ];
 
 const SportsSection: React.FC = () => {
   return (
     <div className="container mx-auto px-6">
-      <span className="text-blue-200 text-xs font-bold tracking-widest uppercase mb-4 block text-center">VAN FRÅN EREDIVISIE TILL FORMEL 1</span>
-      <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center">Alla Sporter Live i 4K</h2>
-      
+      <span className="text-blue-200 text-xs font-bold tracking-widest uppercase mb-4 block text-center">VON DER BUNDESLIGA BIS ZUR FORMEL 1</span>
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center">Alle Sportarten Live in 4K</h2>
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {sports.map((sport, idx) => (
           <div key={idx} className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform shadow-xl shadow-black/30">

@@ -24,17 +24,17 @@ const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen text-white bg-[#020617] selection:bg-indigo-500 selection:text-white">
+      <div className="min-h-screen text-white bg-[#020617] selection:bg-red-600 selection:text-white">
         <Navbar scrolled={scrolled} />
 
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/kanaler" element={<KanalerPage />} />
-            <Route path="/priser" element={<PriserPage />} />
+            <Route path="/sender" element={<KanalerPage />} />
+            <Route path="/preise" element={<PriserPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/reseller" element={<ResellerPage />} />
-            <Route path="/blogg" element={<BlogPage />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </main>
 

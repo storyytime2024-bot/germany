@@ -17,16 +17,16 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks: NavLink[] = [
-    { name: 'Hem', to: '/' },
-    { name: 'Kanaler', to: '/kanaler' },
-    { name: 'Priser', to: '/priser' },
+    { name: 'Startseite', to: '/' },
+    { name: 'Sender', to: '/sender' },
+    { name: 'Preise', to: '/preise' },
     { name: 'FAQ', to: '/faq' },
     { name: 'Reseller', to: '/reseller' },
-    { name: 'Blogg', to: '/blogg' },
+    { name: 'Blog', to: '/blog' },
   ];
 
   const phoneNumber = "447449708976";
-  const supportMessage = encodeURIComponent("Hej, jag har en fråga om MYIPTVNORDIC.");
+  const supportMessage = encodeURIComponent("Hallo, ich habe eine Frage zu IPTV KAUFEN.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${supportMessage}`;
 
   return (
@@ -34,8 +34,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
-            <div className="absolute inset-0 bg-indigo-500 blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
-            <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 to-fuchsia-600 rounded-xl flex items-center justify-center shadow-xl shadow-indigo-500/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
+            <div className="absolute inset-0 bg-red-600 blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
+            <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-amber-500 rounded-xl flex items-center justify-center shadow-xl shadow-red-500/20 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative z-10">
               <svg className="w-5 h-5 text-white fill-current" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -43,8 +43,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-black text-2xl tracking-tighter uppercase flex items-center">
-              <span className="text-white">MYIPTV</span>
-              <span className="text-indigo-500">NORDIC</span>
+              <span className="text-white">IPTV</span>
+              <span className="text-red-600">KAUFEN</span>
             </span>
             <span className="text-[8px] font-black tracking-[0.3em] text-slate-500 uppercase mt-0.5">Premium Streaming</span>
           </div>
@@ -70,8 +70,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
              Support
            </a>
           <LanguageSwitcher />
-          <a href="/#priser" className="px-7 py-3 bg-white text-black text-xs font-black rounded-xl hover:bg-slate-200 transition-all uppercase tracking-widest active:scale-95 shadow-lg shadow-white/5">
-            Bli Medlem
+          <a href="/#preise" className="px-7 py-3 bg-white text-black text-xs font-black rounded-xl hover:bg-slate-200 transition-all uppercase tracking-widest active:scale-95 shadow-lg shadow-white/5">
+            Jetzt Starten
           </a>
         </div>
 
@@ -111,11 +111,11 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
           ))}
           <div className="mt-auto space-y-4 pb-20">
             <LanguageSwitcher mobile />
-            <a href="/#priser" onClick={() => setMobileMenuOpen(false)} className="block w-full bg-indigo-600 text-center py-5 rounded-2xl font-black text-lg shadow-xl shadow-indigo-600/20">
-              Starta ditt paket
+            <a href="/#preise" onClick={() => setMobileMenuOpen(false)} className="block w-full bg-red-600 text-center py-5 rounded-2xl font-black text-lg shadow-xl shadow-red-600/20">
+              Jetzt Paket wählen
             </a>
              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="block w-full bg-white/5 border border-white/10 text-center py-5 rounded-2xl font-black text-lg">
-              Kontakta Support
+              Support kontaktieren
             </a>
           </div>
         </div>

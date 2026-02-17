@@ -3,35 +3,54 @@ import { PricingData, FAQItem, Testimonial } from './types';
 
 export const PRICING: PricingData = {
   1: [
-    { id: '1-1', duration: '1 Månad', price: 199.99, originalPrice: 299.99, label: 'BAS' },
-    { id: '1-3', duration: '3 Månader', price: 449.99, originalPrice: 599.99, label: 'STANDARD' },
-    { id: '1-6', duration: '6 Månader', price: 699.99, originalPrice: 899.99, label: 'PREMIUM' },
-    { id: '1-12', duration: '12 Månader', price: 999.99, originalPrice: 1499.99, label: 'MEST PRISVÄRD', savings: 'BÄST VAL', featured: true },
+    { id: '1-3', duration: '3 Monate', price: 24.99, originalPrice: 44.99, label: 'STANDARD' },
+    { id: '1-6', duration: '6 Monate', price: 34.99, originalPrice: 54.99, label: 'PREMIUM' },
+    { id: '1-12', duration: '12 Monate', price: 69.99, originalPrice: 89.99, label: 'BESTES ANGEBOT', savings: 'BESTE WAHL', featured: true },
   ],
   2: [
-    { id: '2-1', duration: '1 Månad', price: 299.99, originalPrice: 399.99, label: 'BAS' },
-    { id: '2-3', duration: '3 Månader', price: 699.99, originalPrice: 899.99, label: 'STANDARD' },
-    { id: '2-6', duration: '6 Månader', price: 999.99, originalPrice: 1299.99, label: 'PREMIUM' },
-    { id: '2-12', duration: '12 Månader', price: 1799.99, originalPrice: 2299.99, label: 'MEST PRISVÄRD', featured: true },
+    { id: '2-3', duration: '3 Monate', price: 39.99, originalPrice: 59.99, label: 'STANDARD' },
+    { id: '2-6', duration: '6 Monate', price: 49.99, originalPrice: 79.99, label: 'PREMIUM' },
+    { id: '2-12', duration: '12 Monate', price: 99.99, originalPrice: 129.99, label: 'BESTES ANGEBOT', featured: true },
   ],
   3: [
-    { id: '3-1', duration: '1 Månad', price: 449.99, originalPrice: 599.99, label: 'BAS' },
-    { id: '3-3', duration: '3 Månader', price: 999.99, originalPrice: 1299.99, label: 'STANDARD' },
-    { id: '3-6', duration: '6 Månader', price: 1799.99, originalPrice: 2099.99, label: 'PREMIUM' },
-    { id: '3-12', duration: '12 Månader', price: 2499.99, originalPrice: 2999.99, label: 'MEST PRISVÄRD', featured: true },
+    { id: '3-3', duration: '3 Monate', price: 49.99, originalPrice: 69.99, label: 'STANDARD' },
+    { id: '3-6', duration: '6 Monate', price: 69.99, originalPrice: 89.99, label: 'PREMIUM' },
+    { id: '3-12', duration: '12 Monate', price: 139.99, originalPrice: 179.99, label: 'BESTES ANGEBOT', featured: true },
   ],
   4: [
-    { id: '4-1', duration: '1 Månad', price: 699.99, originalPrice: 899.99, label: 'BAS' },
-    { id: '4-3', duration: '3 Månader', price: 1299.99, originalPrice: 1599.99, label: 'STANDARD' },
-    { id: '4-6', duration: '6 Månader', price: 2499.99, originalPrice: 2999.99, label: 'PREMIUM' },
-    { id: '4-12', duration: '12 Månader', price: 3499.99, originalPrice: 3999.99, label: 'MEST PRISVÄRD', featured: true },
+    { id: '4-3', duration: '3 Monate', price: 57.99, originalPrice: 85.99, label: 'STANDARD' },
+    { id: '4-6', duration: '6 Monate', price: 89.99, originalPrice: 119.99, label: 'PREMIUM' },
+    { id: '4-12', duration: '12 Monate', price: 179.99, originalPrice: 239.99, label: 'BESTES ANGEBOT', featured: true },
+  ],
+};
+
+export const VIP_PRICING: PricingData = {
+  1: [
+    { id: 'v1-3', duration: '3 Monate', price: 34.99, originalPrice: 54.99, label: 'VIP STANDARD' },
+    { id: 'v1-6', duration: '6 Monate', price: 44.99, originalPrice: 64.99, label: 'VIP PREMIUM' },
+    { id: 'v1-12', duration: '12 + 3 Monate', price: 79.99, originalPrice: 99.99, label: 'VIP ELITE', savings: 'BESTE WAHL', featured: true },
+  ],
+  2: [
+    { id: 'v2-3', duration: '3 Monate', price: 49.99, originalPrice: 69.99, label: 'VIP STANDARD' },
+    { id: 'v2-6', duration: '6 Monate', price: 79.99, originalPrice: 99.99, label: 'VIP PREMIUM' },
+    { id: 'v2-12', duration: '12 + 3 Monate', price: 125.99, originalPrice: 159.99, label: 'VIP ELITE', featured: true },
+  ],
+  3: [
+    { id: 'v3-3', duration: '3 Monate', price: 69.99, originalPrice: 134.99, label: 'VIP STANDARD' },
+    { id: 'v3-6', duration: '6 Monate', price: 99.99, originalPrice: 129.99, label: 'VIP PREMIUM' },
+    { id: 'v3-12', duration: '12 + 3 Monate', price: 179.99, originalPrice: 249.99, label: 'VIP ELITE', featured: true },
+  ],
+  4: [
+    { id: 'v4-3', duration: '3 Monate', price: 89.99, originalPrice: 125.99, label: 'VIP STANDARD' },
+    { id: 'v4-6', duration: '6 Monate', price: 139.99, originalPrice: 199.99, label: 'VIP PREMIUM' },
+    { id: 'v4-12', duration: '12 + 3 Monate', price: 199.99, originalPrice: 279.99, label: 'VIP ELITE', featured: true },
   ],
 };
 
 export interface ChannelCategory {
   id: string;
   name: string;
-  region: 'nordic' | 'featured' | 'europe' | 'americas' | 'middle-east' | 'asia' | 'africa' | 'oceania' | 'caribbean';
+  region: 'germany' | 'featured' | 'europe' | 'americas' | 'middle-east' | 'asia' | 'africa' | 'oceania' | 'caribbean';
   channels: string[];
 }
 
@@ -327,7 +346,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'formule-1-motorsport',
-    name: '🏎️ Formule 1 & Motorsport',
+    name: '🏎️ Formel 1 & Motorsport',
     region: 'featured',
     channels: [
       'F1 Live Races FHD',
@@ -350,7 +369,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'films-series',
-    name: '🎬 Films & Series',
+    name: '🎬 Filme & Serien',
     region: 'featured',
     channels: [
       'NL Film1 Premiere HD',
@@ -382,7 +401,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'documentaire',
-    name: '🌍 Documentaire',
+    name: '🌍 Dokumentationen',
     region: 'featured',
     channels: [
       'Animal Planet',
@@ -498,7 +517,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'History JP',
       'History Lab',
       'Hunting',
-      'I Discovery Sverige',
+      'Discovery Deutschland',
       'Investigation Discovery',
       'Investigation Discovery East',
       'Investigation Discovery FHD',
@@ -586,7 +605,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'kinderen',
-    name: '👶 Kinderen',
+    name: '👶 Kinder',
     region: 'featured',
     channels: [
       'NL nickelodeon FHD',
@@ -764,7 +783,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'muziek',
-    name: '🎵 Muziek',
+    name: '🎵 Musik',
     region: 'featured',
     channels: [
       'NL MTV HD',
@@ -787,11 +806,11 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'nieuws',
-    name: '📰 Nieuws',
+    name: '📰 Nachrichten',
     region: 'featured',
     channels: [
-      'NL NPO Nieuws',
-      'NL RTL Nieuws',
+      'NL NPO Nachrichten',
+      'NL RTL Nachrichten',
       'NL Euronews NL HD',
       'BE VRT NWS HD',
       'UK BBC News HD',
@@ -814,7 +833,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'nederland',
-    name: '🇳🇱 Nederland',
+    name: '🇳🇱 Niederlande',
     region: 'europe',
     channels: [
       'NL NPO 1 FHD',
@@ -845,8 +864,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'NL Veronica HD',
       'NL Spike FHD',
       'NL Spike HD',
-      'NL NPO Nieuws FHD',
-      'NL NPO Nieuws HD',
+      'NL NPO Nachrichten FHD',
+      'NL NPO Nachrichten HD',
       'NL NPO Politiek HD',
       'NL NPO 1 Extra HD',
       'NL NPO 2 Extra HD',
@@ -983,7 +1002,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'NL Omroep Brabant FHD',
       'NL RTV Noord FHD',
       'NL TV Gelderland FHD',
-      'NL NH Nieuws FHD',
+      'NL NH Nachrichten FHD',
       'NL RTV Utrecht FHD',
       'NL Omroep Zeeland FHD',
       'NL RTV Drenthe FHD',
@@ -995,7 +1014,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'belgie',
-    name: '🇧🇪 België',
+    name: '🇧🇪 Belgien',
     region: 'europe',
     channels: [
       'BE één FHD',
@@ -1168,8 +1187,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'duitsland',
-    name: '🇩🇪 Duitsland',
-    region: 'europe',
+    name: '🇩🇪 Deutschland',
+    region: 'germany',
     channels: [
       'DE ARD FHD',
       'DE ARD HD',
@@ -1417,7 +1436,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'verenigd-koninkrijk',
-    name: '🇬🇧 Verenigd Koninkrijk',
+    name: '🇬🇧 Großbritannien',
     region: 'europe',
     channels: [
       'UK CARONA VIRUS INFO',
@@ -1974,7 +1993,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'frankrijk',
-    name: '🇫🇷 Frankrijk',
+    name: '🇫🇷 Frankreich',
     region: 'europe',
     channels: [
       'FR TF1 FHD',
@@ -2186,7 +2205,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'spanje',
-    name: '🇪🇸 Spanje',
+    name: '🇪🇸 Spanien',
     region: 'europe',
     channels: [
       'ES La 1 FHD',
@@ -2377,7 +2396,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'italie',
-    name: '🇮🇹 Italië',
+    name: '🇮🇹 Italien',
     region: 'europe',
     channels: [
       'IT Rai 1 HD',
@@ -2754,7 +2773,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'griekenland',
-    name: '🇬🇷 Griekenland',
+    name: '🇬🇷 Griechenland',
     region: 'europe',
     channels: [
       'Corona Virus Info',
@@ -2889,8 +2908,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'zweden',
-    name: '🇸🇪 Zweden',
-    region: 'nordic',
+    name: '🇸🇪 Schweden',
+    region: 'europe',
     channels: [
       'Corona Virus Info',
       'Svt 1 Hd',
@@ -3008,8 +3027,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'noorwegen',
-    name: '🇳🇴 Noorwegen',
-    region: 'nordic',
+    name: '🇳🇴 Norwegen',
+    region: 'europe',
     channels: [
       'Corona Virus Info',
       'Nrk 1 Hd',
@@ -3099,8 +3118,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'denemarken',
-    name: '🇩🇰 Denemarken',
-    region: 'nordic',
+    name: '🇩🇰 Dänemark',
+    region: 'europe',
     channels: [
       'DK CORONA VIRUS INFO',
       'DK DR1',
@@ -3184,8 +3203,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'finland',
-    name: '🇫🇮 Finland',
-    region: 'nordic',
+    name: '🇫🇮 Finnland',
+    region: 'europe',
     channels: [
       'Corona Virus Info',
       'Yle Tv Fem',
@@ -3221,8 +3240,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'oostenrijk',
-    name: '🇦🇹 Oostenrijk',
-    region: 'europe',
+    name: '🇦🇹 Österreich',
+    region: 'germany',
     channels: [
       'Corona Virus Info',
       'Atv Hd',
@@ -3246,8 +3265,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'zwitserland',
-    name: '🇨🇭 Zwitserland',
-    region: 'europe',
+    name: '🇨🇭 Schweiz',
+    region: 'germany',
     channels: [
       'Corona Virus Info',
       'Rsi La 1 HD',
@@ -3283,7 +3302,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'roemenie',
-    name: '🇷🇴 Roemenië',
+    name: '🇷🇴 Rumänien',
     region: 'europe',
     channels: [
       'Corona Virus Info',
@@ -3353,7 +3372,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'hongarije',
-    name: '🇭🇺 Hongarije',
+    name: '🇭🇺 Ungarn',
     region: 'europe',
     channels: [
       'HU M1 HD',
@@ -3377,7 +3396,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'tsjechie',
-    name: '🇨🇿 Tsjechië',
+    name: '🇨🇿 Tschechien',
     region: 'europe',
     channels: [
       'CZ CT1 HD',
@@ -3400,7 +3419,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'slowakije',
-    name: '🇸🇰 Slowakije',
+    name: '🇸🇰 Slowakei',
     region: 'europe',
     channels: [
       'SK Jednotka HD',
@@ -3424,7 +3443,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'kroatie',
-    name: '🇭🇷 Kroatië',
+    name: '🇭🇷 Kroatien',
     region: 'europe',
     channels: [
       'HR HRT 1 HD',
@@ -3447,7 +3466,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'servie',
-    name: '🇷🇸 Servië',
+    name: '🇷🇸 Serbien',
     region: 'europe',
     channels: [
       'RS RTS 1 HD',
@@ -3471,7 +3490,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'bulgarije',
-    name: '🇧🇬 Bulgarije',
+    name: '🇧🇬 Bulgarien',
     region: 'europe',
     channels: [
       'BG BNT 1 HD',
@@ -3495,7 +3514,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'slovenie',
-    name: '🇸🇮 Slovenië',
+    name: '🇸🇮 Slowenien',
     region: 'europe',
     channels: [
       'SI RTV SLO 1 HD',
@@ -3518,7 +3537,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'bosnie',
-    name: '🇧🇦 Bosnië',
+    name: '🇧🇦 Bosnien',
     region: 'europe',
     channels: [
       'BA BHT 1 HD',
@@ -3537,7 +3556,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'noord-macedonie',
-    name: '🇲🇰 Noord-Macedonië',
+    name: '🇲🇰 Nordmazedonien',
     region: 'europe',
     channels: [
       'MK MRT 1 HD',
@@ -3556,7 +3575,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'albanie',
-    name: '🇦🇱 Albanië',
+    name: '🇦🇱 Albanien',
     region: 'europe',
     channels: [
       'AL RTSH 1 HD',
@@ -3614,7 +3633,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'oekraine',
-    name: '🇺🇦 Oekraïne',
+    name: '🇺🇦 Ukraine',
     region: 'europe',
     channels: [
       'UA 1+1 HD',
@@ -3636,7 +3655,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'rusland',
-    name: '🇷🇺 Rusland',
+    name: '🇷🇺 Russland',
     region: 'europe',
     channels: [
       'RU Perviy Kanal HD',
@@ -3660,7 +3679,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'ierland',
-    name: '🇮🇪 Ierland',
+    name: '🇮🇪 Irland',
     region: 'europe',
     channels: [
       'IE RTÉ One HD',
@@ -3679,7 +3698,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'ijsland',
-    name: '🇮🇸 IJsland',
+    name: '🇮🇸 Island',
     region: 'europe',
     channels: [
       'IS RÚV HD',
@@ -3718,15 +3737,15 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'cyprus',
-    name: '🇨🇾 Cyprus',
+    name: '🇨🇾 Zypern',
     region: 'europe',
     channels: [
       'CY RIK 1 HD',
       'CY RIK 2 HD',
       'CY Sigma TV HD',
-      'CY ANT1 Cyprus HD',
-      'CY Mega Cyprus HD',
-      'CY Alpha Cyprus HD',
+      'CY ANT1 Zypern HD',
+      'CY Mega Zypern HD',
+      'CY Alpha Zypern HD',
       'CY Capital TV HD',
       'CY Plus TV HD',
       'CY Cytavision Sports 1 HD',
@@ -3736,7 +3755,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'letland',
-    name: '🇱🇻 Letland',
+    name: '🇱🇻 Lettland',
     region: 'europe',
     channels: [
       'LV LTV1 HD',
@@ -3751,7 +3770,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'litouwen',
-    name: '🇱🇹 Litouwen',
+    name: '🇱🇹 Litauen',
     region: 'europe',
     channels: [
       'LT LRT HD',
@@ -3781,7 +3800,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'verenigde-staten',
-    name: '🇺🇸 Verenigde Staten',
+    name: '🇺🇸 Vereinigte Staaten',
     region: 'americas',
     channels: [
       'USA CORONA VIRUS INFO',
@@ -4501,7 +4520,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'canada',
-    name: '🇨🇦 Canada',
+    name: '🇨🇦 Kanada',
     region: 'americas',
     channels: [
       'CA CBC HD',
@@ -4565,7 +4584,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'CA Sportsnet Pacific HD',
       'CA Sportsnet World HD',
       'CA NHL Network CA HD',
-      'CA NBA TV Canada HD',
+      'CA NBA TV Kanada HD',
       'CA ESPN CA HD',
       'CA ESPN2 CA HD',
       'CA Golf Channel CA HD',
@@ -4585,8 +4604,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'CA Crave 2 HD',
       'CA Crave 3 HD',
       'CA Crave 4 HD',
-      'CA HBO Canada HD',
-      'CA HBO 2 Canada HD',
+      'CA HBO Kanada HD',
+      'CA HBO 2 Kanada HD',
       'CA TMN HD',
       'CA TMN 2 HD',
       'CA TMN 3 HD',
@@ -4605,8 +4624,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'CA W Network HD',
       'CA Slice HD',
       'CA OWN CA HD',
-      'CA HGTV Canada HD',
-      'CA Food Network Canada HD',
+      'CA HGTV Kanada HD',
+      'CA Food Network Kanada HD',
       'CA Cooking Channel CA HD',
       'CA History CA HD',
       'CA National Geographic CA HD',
@@ -4615,8 +4634,8 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'CA Discovery Science CA HD',
       'CA Discovery Velocity CA HD',
       'CA Animal Planet CA HD',
-      'CA TLC Canada HD',
-      'CA ID Canada HD',
+      'CA TLC Kanada HD',
+      'CA ID Kanada HD',
       'CA Crime+Investigation CA HD',
       'CA A&E CA HD',
       'CA Lifetime CA HD',
@@ -4639,15 +4658,15 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
       'CA CTV News HD',
       'CA CBC News HD',
       'CA Much HD',
-      'CA MTV Canada HD',
-      'CA CMT Canada HD',
-      'CA E! Canada HD',
+      'CA MTV Kanada HD',
+      'CA CMT Kanada HD',
+      'CA E! Kanada HD',
       'CA Comedy Gold HD',
       'CA Comedy Network HD',
       'CA Space HD',
       'CA Syfy CA HD',
       'CA TVA HD',
-      'CA ICI Radio-Canada Télé HD',
+      'CA ICI Radio-Kanada Télé HD',
       'CA ICI RDI HD',
       'CA ICI ARTV HD',
       'CA V HD',
@@ -4664,7 +4683,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'mexico',
-    name: '🇲🇽 Mexico',
+    name: '🇲🇽 Mexiko',
     region: 'americas',
     channels: [
       'MX Televisa HD',
@@ -4683,7 +4702,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'brazilie',
-    name: '🇧🇷 Brazilië',
+    name: '🇧🇷 Brasilien',
     region: 'americas',
     channels: [
       'BR Globo HD',
@@ -4834,7 +4853,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'argentinie',
-    name: '🇦🇷 Argentinië',
+    name: '🇦🇷 Argentinien',
     region: 'americas',
     channels: [
       'AR Canal 13 HD',
@@ -4854,7 +4873,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'colombia',
-    name: '🇨🇴 Colombia',
+    name: '🇨🇴 Kolumbien',
     region: 'americas',
     channels: [
       'CO Caracol HD',
@@ -4872,7 +4891,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'chili',
-    name: '🇨🇱 Chili',
+    name: '🇨🇱 Chile',
     region: 'americas',
     channels: [
       'CL TVN HD',
@@ -4940,7 +4959,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'turkije',
-    name: '🇹🇷 Turkije',
+    name: '🇹🇷 Türkei',
     region: 'middle-east',
     channels: [
       'Trt Muzik Uhd',
@@ -5414,7 +5433,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'israel',
-    name: '🇮🇱 Israël',
+    name: '🇮🇱 Israel',
     region: 'middle-east',
     channels: [
       'IL Channel 11 HD',
@@ -5452,7 +5471,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'koeweit',
-    name: '🇰🇼 Koeweit',
+    name: '🇰🇼 Kuwait',
     region: 'middle-east',
     channels: [
       'KW KTV 1 HD',
@@ -5482,7 +5501,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'verenigde-arabische-emiraten',
-    name: '🇦🇪 Verenigde Arabische Emiraten',
+    name: '🇦🇪 Vereinigte Arabische Emirate',
     region: 'middle-east',
     channels: [
       'AE Dubai TV HD',
@@ -5497,7 +5516,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'egypte',
-    name: '🇪🇬 Egypte',
+    name: '🇪🇬 Ägypten',
     region: 'middle-east',
     channels: [
       'EG Channel 1 HD',
@@ -5531,7 +5550,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'jordanie',
-    name: '🇯🇴 Jordanië',
+    name: '🇯🇴 Jordanien',
     region: 'middle-east',
     channels: [
       'JO Jordan TV HD',
@@ -5556,7 +5575,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'india',
-    name: '🇮🇳 India',
+    name: '🇮🇳 Indien',
     region: 'asia',
     channels: [
       'IN Star Plus HD',
@@ -5716,7 +5735,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'bangladesh',
-    name: '🇧🇩 Bangladesh',
+    name: '🇧🇩 Bangladesch',
     region: 'asia',
     channels: [
       'BD BTV HD',
@@ -5792,7 +5811,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'maleisie',
-    name: '🇲🇾 Maleisië',
+    name: '🇲🇾 Malaysia',
     region: 'asia',
     channels: [
       'MY TV1 HD',
@@ -5811,7 +5830,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'indonesie',
-    name: '🇮🇩 Indonesië',
+    name: '🇮🇩 Indonesien',
     region: 'asia',
     channels: [
       'ID RCTI HD',
@@ -5831,7 +5850,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'filipijnen',
-    name: '🇵🇭 Filipijnen',
+    name: '🇵🇭 Philippinen',
     region: 'asia',
     channels: [
       'PH ABS-CBN HD',
@@ -5863,7 +5882,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'singapore',
-    name: '🇸🇬 Singapore',
+    name: '🇸🇬 Singapur',
     region: 'asia',
     channels: [
       'SG Channel 5 HD',
@@ -5899,7 +5918,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'zuid-korea',
-    name: '🇰🇷 Zuid-Korea',
+    name: '🇰🇷 Südkorea',
     region: 'asia',
     channels: [
       'KR KBS1 HD',
@@ -5971,7 +5990,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'zuid-afrika',
-    name: '🇿🇦 Zuid-Afrika',
+    name: '🇿🇦 Südafrika',
     region: 'africa',
     channels: [
       'ZA SABC 1 HD',
@@ -6049,7 +6068,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'algerije',
-    name: '🇩🇿 Algerije',
+    name: '🇩🇿 Algerien',
     region: 'africa',
     channels: [
       'DZ ENTV HD',
@@ -6063,7 +6082,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'tunesie',
-    name: '🇹🇳 Tunesië',
+    name: '🇹🇳 Tunesien',
     region: 'africa',
     channels: [
       'TN Watania 1 HD',
@@ -6077,7 +6096,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'ethiopie',
-    name: '🇪🇹 Ethiopië',
+    name: '🇪🇹 Äthiopien',
     region: 'africa',
     channels: [
       'ET EBC HD',
@@ -6091,7 +6110,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'australie',
-    name: '🇦🇺 Australië',
+    name: '🇦🇺 Australien',
     region: 'oceania',
     channels: [
       'AU ABC HD',
@@ -6113,7 +6132,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'nieuw-zeeland',
-    name: '🇳🇿 Nieuw-Zeeland',
+    name: '🇳🇿 Neuseeland',
     region: 'oceania',
     channels: [
       'NZ TVNZ 1 HD',
@@ -6165,7 +6184,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'jamaica',
-    name: '🇯🇲 Jamaica',
+    name: '🇯🇲 Jamaika',
     region: 'caribbean',
     channels: [
       'JM TVJ HD',
@@ -6177,7 +6196,7 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
   },
   {
     id: 'trinidad-en-tobago',
-    name: '🇹🇹 Trinidad en Tobago',
+    name: '🇹🇹 Trinidad und Tobago',
     region: 'caribbean',
     channels: [
       'TT TTT HD',
@@ -6191,62 +6210,57 @@ export const CHANNEL_CATEGORIES: ChannelCategory[] = [
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
-    question: "Vilka enheter stöds?",
-    answer: "Vår tjänst fungerar på alla smarta enheter: Smart TV (Samsung, LG, Sony), Android Box, Apple TV, MAG, PC, Smartphone (iOS & Android) och surfplattor."
+    question: "Welche Geräte werden unterstützt?",
+    answer: "Unser Dienst funktioniert auf allen Smart-Geräten: Smart TV (Samsung, LG, Sony), Android Box, Apple TV, MAG, PC, Smartphone (iOS & Android) und Tablets."
   },
   {
-    question: "Hur snabb internetanslutning behöver jag?",
-    answer: "Vi rekommenderar minst 15-20 Mbps för HD-streaming och 50 Mbps för en stabil 4K-upplevelse."
+    question: "Wie schnell muss mein Internet sein?",
+    answer: "Wir empfehlen mindestens 15-20 Mbit/s für HD-Streaming und 50 Mbit/s für ein stabiles 4K-Erlebnis."
   },
   {
-    question: "Ingår de svenska kanalerna?",
-    answer: "Ja, vi har ett komplett utbud av svenska kanaler inklusive alla sportkanaler som TV4 Play, Viaplay Sport, Eurosport och Discovery+."
+    question: "Sind die deutschen Sender enthalten?",
+    answer: "Ja, wir haben ein komplettes Angebot an deutschen Sendern inklusive aller Sportsender wie Sky Sport, DAZN, Sport1, Eurosport und Discovery+."
   },
   {
-    question: "Hur snabbt aktiveras mitt konto?",
-    answer: "Efter betalning skickas dina inloggningsuppgifter via e-post eller WhatsApp inom 5 till 15 minuter."
+    question: "Wie schnell wird mein Konto aktiviert?",
+    answer: "Nach der Bezahlung werden deine Zugangsdaten per E-Mail oder WhatsApp innerhalb von 5 bis 15 Minuten versendet."
   },
   {
-    question: "Har ni 4K-kvalitet?",
-    answer: "Ja, de flesta stora sportevenemang och nya filmer/serier sänds i äkta 4K-upplösning."
+    question: "Habt ihr 4K-Qualität?",
+    answer: "Ja, die meisten großen Sportevents und neue Filme/Serien werden in echter 4K-Auflösung gesendet."
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
-  { name: "Johan S.", text: "Installationen tog bokstavligen 5 minuter. Ingen huvudvärk med tekniker!", time: "12:34", avatar: "JS", side: 'left' },
-  { name: "Fatima B.", text: "Har haft det i 3 månader nu utan ett enda avbrott. Bättre än Telia någonsin var.", time: "14:02", avatar: "FB", side: 'right' },
-  { name: "Thomas K.", text: "4K-kvaliteten är på en annan nivå. Champions League ser fantastiskt ut.", time: "18:47", avatar: "TK", side: 'left' }
+  { name: "Thomas M.", text: "Die Installation hat buchstäblich 5 Minuten gedauert. Kein Stress mit Technikern!", time: "12:34", avatar: "TM", side: 'left' },
+  { name: "Sabine K.", text: "Habe es seit 3 Monaten ohne eine einzige Unterbrechung. Besser als Sky jemals war.", time: "14:02", avatar: "SK", side: 'right' },
+  { name: "Markus W.", text: "Die 4K-Qualität ist auf einem anderen Level. Champions League sieht fantastisch aus.", time: "18:47", avatar: "MW", side: 'left' }
 ];
 
 export const CHANNEL_LOGOS = [
-  // Sweden
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/SVT1_logo_2016.svg/320px-SVT1_logo_2016.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/SVT2_logo_2016.svg/320px-SVT2_logo_2016.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/TV4_logo_2021.svg/320px-TV4_logo_2021.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/TV3_Sverige.png/320px-TV3_Sverige.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kanal_5_Sweden_logo.png/320px-Kanal_5_Sweden_logo.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/TV6_logo.svg/320px-TV6_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/SVT_logo_2016.svg/1200px-SVT_logo_2016.svg.png",
-  // Nordic
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/NRK1_logo.svg/320px-NRK1_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/DR1_logo_2020.svg/320px-DR1_logo_2020.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Yle_TV1_logo.svg/320px-Yle_TV1_logo.svg.png",
-  // VIP
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Viaplay_logo.svg/320px-Viaplay_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/C_More_Entertainment_logo.svg/320px-C_More_Entertainment_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Canal%2B.svg/320px-Canal%2B.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/HBO_Max_Logo.svg/320px-HBO_Max_Logo.svg.png",
+  // Germany
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/ARD_logo.svg/320px-ARD_logo.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/ZDF_logo.svg/320px-ZDF_logo.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/RTL_Logo_2021.svg/320px-RTL_Logo_2021.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/ProSieben_logo.svg/320px-ProSieben_logo.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sat.1_logo.svg/320px-Sat.1_logo.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/VOX_logo.svg/320px-VOX_logo.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kabel_eins_Logo.svg/320px-Kabel_eins_Logo.svg.png",
+  // VIP & Streaming
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/320px-Netflix_2015_logo.svg.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/320px-Disney%2B_logo.svg.png",
-  // PPV & Sports
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/DAZN_logo.svg/320px-DAZN_logo.svg.png",
+  // Sky & Sport
+  "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Sky_Sports_logo_2020.svg/320px-Sky_Sports_logo_2020.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eurosport_logo_2015.svg/1200px-Eurosport_logo_2015.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Canal%2B.svg/320px-Canal%2B.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/HBO_Max_Logo.svg/320px-HBO_Max_Logo.svg.png",
+  // PPV
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/UFC_logo.svg/320px-UFC_logo.svg.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/WWE_Network_logo_%282021%29.svg/320px-WWE_Network_logo_%282021%29.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/DAZN_logo.svg/320px-DAZN_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/BoxNation_logo.svg/320px-BoxNation_logo.svg.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Showtime.svg/320px-Showtime.svg.png",
-  "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Sky_Sports_logo_2020.svg/320px-Sky_Sports_logo_2020.svg.png",
-  // Discovery & Eurosport
+  "https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/BoxNation_logo.svg/320px-BoxNation_logo.svg.png",
+  // Discovery
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Discovery_Plus.svg/320px-Discovery_Plus.svg.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Discovery%2B_logo.svg/2560px-Discovery%2B_logo.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eurosport_logo_2015.svg/1200px-Eurosport_logo_2015.svg.png",
 ];
