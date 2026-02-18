@@ -151,8 +151,8 @@ const Pricing: React.FC = () => {
                 <div className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-grow">
                   {(isVip ? [
                     `VIP-Zugang auf ${devices} Gerät${devices > 1 ? 'en' : ''}`,
-                    '65.000+ Sender (Live)',
-                    '175.000+ Filme & Serien',
+                    '85.000+ Sender (Live)',
+                    '200.000+ Filme & Serien',
                     'Alle Sportpakete inklusive',
                     'PPV Events: UFC, Boxen, WWE',
                     '4K / Ultra HD verfügbar',
@@ -160,8 +160,8 @@ const Pricing: React.FC = () => {
                     'Prioritäts-Support 24/7',
                   ] : [
                     `Voller Zugang auf ${devices} Gerät${devices > 1 ? 'en' : ''}`,
-                    '65.000+ Sender (Live)',
-                    '175.000+ Filme & Serien',
+                    '35.000+ Sender (Live)',
+                    '98.000+ Filme & Serien',
                     'Alle Sportpakete inklusive',
                     '4K / Ultra HD verfügbar',
                     'Anti-Freeze Technologie',
