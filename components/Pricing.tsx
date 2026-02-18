@@ -10,7 +10,7 @@ function formatPrice(price: number): { whole: string; decimals: string; symbol: 
 
 const Pricing: React.FC = () => {
   const [devices, setDevices] = useState(1);
-  const [isVip, setIsVip] = useState(false);
+  const [isVip, setIsVip] = useState(true);
   const [timeLeft, setTimeLeft] = useState({ hours: 14, minutes: 22, seconds: 12 });
   const phoneNumber = "447449708976";
   const activePricing = isVip ? VIP_PRICING : PRICING;
