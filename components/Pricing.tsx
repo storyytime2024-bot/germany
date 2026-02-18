@@ -163,7 +163,6 @@ const Pricing: React.FC = () => {
                     '35.000+ Sender (Live)',
                     '98.000+ Filme & Serien',
                     'Alle Sportpakete inklusive',
-                    '4K / Ultra HD verfügbar',
                     'Anti-Freeze Technologie',
                     'Keine Vertragsbindung',
                   ]).map((feature, i) => (
