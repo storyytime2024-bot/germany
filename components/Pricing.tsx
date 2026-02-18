@@ -163,7 +163,7 @@ const Pricing: React.FC = () => {
                     '35.000+ Sender (Live)',
                     '98.000+ Filme & Serien',
                     'Alle Sportpakete inklusive',
-                    'Anti-Freeze Technologie',
+                    'FHD / HD / SD verfügbar',
                     'Keine Vertragsbindung',
                   ]).map((feature, i) => (
                     <div key={i} className={`flex items-start gap-2.5 sm:gap-3 text-xs sm:text-sm font-semibold leading-snug ${isVip ? 'text-gray-300' : 'text-slate-700'}`}>
