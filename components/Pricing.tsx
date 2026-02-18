@@ -156,6 +156,7 @@ const Pricing: React.FC = () => {
                     'Alle Sportpakete inklusive',
                     'PPV Events: UFC, Boxen, WWE',
                     '4K / Ultra HD verfügbar',
+                    'Anti-Freeze Technologie',
                     'Dedizierter VIP-Server',
                     'Prioritäts-Support 24/7',
                   ] : [
