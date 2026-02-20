@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </div>
 
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.25em]">
-            &copy; {new Date().getFullYear()} IPTVKAUFEN.COM. BESTES IPTV IN DEUTSCHLAND, &Ouml;STERREICH & SCHWEIZ.
+            &copy; {new Date().getFullYear()} IPTVKAUFEN.DIGITAL. BESTES IPTV IN DEUTSCHLAND, &Ouml;STERREICH & SCHWEIZ.
           </p>
         </div>
       </div>

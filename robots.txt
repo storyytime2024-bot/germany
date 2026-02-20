@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://myiptvnordic.com/sitemap.xml
+Sitemap: https://iptvkaufen.digital/sitemap.xml
