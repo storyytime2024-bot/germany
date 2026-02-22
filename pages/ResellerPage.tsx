@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const ResellerPage: React.FC = () => {
   const phoneNumber = "447449708976";
-  const resellerMessage = encodeURIComponent("Hallo, ich interessiere mich für euer Reseller-Programm bei IPTV KAUFEN.");
+  const resellerMessage = encodeURIComponent("Hallo, ich interessiere mich für euer Reseller-Programm bei HAKUNA TV.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${resellerMessage}`;
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);

@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-black text-xl tracking-tighter uppercase">
-                <span className="text-white">IPTV</span>
-                <span className="text-red-600">KAUFEN</span>
+                <span className="text-white">HAKUNA</span>
+                <span className="text-red-600">TV</span>
               </span>
               <span className="text-[7px] font-black tracking-[0.3em] text-slate-500 uppercase mt-0.5">Premium Streaming</span>
             </div>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </div>
 
           <p className="text-[10px] font-black text-slate-600 uppercase tracking-[0.25em]">
-            &copy; {new Date().getFullYear()} IPTVKAUFEN.DIGITAL. BESTES IPTV IN DEUTSCHLAND, &Ouml;STERREICH & SCHWEIZ.
+            &copy; {new Date().getFullYear()} HAKUNATV. BESTES IPTV IN DEUTSCHLAND, &Ouml;STERREICH & SCHWEIZ.
           </p>
         </div>
       </div>

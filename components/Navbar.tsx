@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   ];
 
   const phoneNumber = "447449708976";
-  const supportMessage = encodeURIComponent("Hallo, ich habe eine Frage zu IPTV KAUFEN.");
+  const supportMessage = encodeURIComponent("Hallo, ich habe eine Frage zu HAKUNA TV.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${supportMessage}`;
 
   return (
@@ -43,8 +43,8 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-black text-2xl tracking-tighter uppercase flex items-center">
-              <span className="text-white">IPTV</span>
-              <span className="text-red-600">KAUFEN</span>
+              <span className="text-white">HAKUNA</span>
+              <span className="text-red-600">TV</span>
             </span>
             <span className="text-[8px] font-black tracking-[0.3em] text-slate-500 uppercase mt-0.5">Premium Streaming</span>
           </div>

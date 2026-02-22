@@ -90,7 +90,7 @@ const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 9,
-    title: '5 Gründe, warum IPTV KAUFEN die beste Wahl ist',
+    title: '5 Gründe, warum HAKUNA TV die beste Wahl ist',
     excerpt: 'Qualität, Stabilität, Support, Angebot und Preis. Wir erklären, warum wir die beste Wahl für deutsche Nutzer sind.',
     category: 'Neuigkeiten',
     date: '20. Jan. 2026',
@@ -128,7 +128,7 @@ const BlogPage: React.FC = () => {
           <span className="text-red-400 text-xs font-black tracking-[0.3em] uppercase mb-4 block">BLOG</span>
           <h1 className="text-4xl md:text-6xl font-black mb-6">Neueste <span className="text-red-400">Beiträge</span></h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg font-medium">
-            Anleitungen, Tipps, Neuigkeiten und alles, was du über IPTV und Streaming wissen musst. Bleib auf dem Laufenden mit IPTV KAUFEN.
+            Anleitungen, Tipps, Neuigkeiten und alles, was du über IPTV und Streaming wissen musst. Bleib auf dem Laufenden mit HAKUNA TV.
           </p>
         </div>
 
@@ -279,7 +279,7 @@ const BlogPage: React.FC = () => {
               </p>
             </div>
             <a
-              href="https://wa.me/447449708976?text=Hallo%2C%20ich%20möchte%20über%20Neuigkeiten%20von%20IPTV%20KAUFEN%20informiert%20werden."
+              href="https://wa.me/447449708976?text=Hallo%2C%20ich%20möchte%20über%20Neuigkeiten%20von%20HAKUNA%20TV%20informiert%20werden."
               target="_blank"
               rel="noopener noreferrer"
               className="px-12 py-5 bg-white text-red-600 font-black text-sm uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-100 hover:scale-105 transition-all shadow-xl shadow-black/10 whitespace-nowrap"

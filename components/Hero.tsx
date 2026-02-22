@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   const phoneNumber = "447449708976";
-  const contactMessage = encodeURIComponent("Hallo, ich möchte mehr über IPTV KAUFEN und eure IPTV-Pakete erfahren.");
+  const contactMessage = encodeURIComponent("Hallo, ich möchte mehr über HAKUNA TV und eure IPTV-Pakete erfahren.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${contactMessage}`;
 
   return (

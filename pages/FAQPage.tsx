@@ -129,7 +129,7 @@ const FAQPage: React.FC = () => {
                 Unser Support antwortet innerhalb von Minuten und ist 7 Tage die Woche erreichbar. Wir helfen dir gerne bei allem — von der Installation bis zur Fehlerbehebung.
               </p>
             </div>
-            <a href="https://wa.me/447449708976?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20IPTV%20KAUFEN." target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-red-600 font-black text-sm uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-100 hover:scale-105 transition-all shadow-xl shadow-black/10 whitespace-nowrap">
+            <a href="https://wa.me/447449708976?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zu%20HAKUNA%20TV." target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-red-600 font-black text-sm uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-100 hover:scale-105 transition-all shadow-xl shadow-black/10 whitespace-nowrap">
               Support kontaktieren
             </a>
           </div>

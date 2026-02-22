@@ -12,7 +12,7 @@ import PremiumChannels from '../components/PremiumChannels';
 
 const HomePage: React.FC = () => {
   const phoneNumber = "447449708976";
-  const supportMessage = encodeURIComponent("Hallo, ich brauche Hilfe mit IPTV KAUFEN.");
+  const supportMessage = encodeURIComponent("Hallo, ich brauche Hilfe mit HAKUNA TV.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${supportMessage}`;
 
   return (

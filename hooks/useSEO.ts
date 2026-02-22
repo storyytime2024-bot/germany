@@ -11,7 +11,7 @@ interface SEOProps {
   structuredData?: object;
 }
 
-const BASE_URL = 'https://iptvkaufen.digital';
+const BASE_URL = 'https://hakunatv.digital';
 
 function useSEO({
   title,
